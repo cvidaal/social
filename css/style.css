@@ -1,0 +1,140 @@
+
+:root{
+    --fontPrimaria: "Inter";
+
+    --Green: hsl(75, 94%, 57%); 
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+/* General */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
+  
+  body{
+      font-size: 1.6rem;
+      background-color: var(--OffBlack);
+  }
+
+p{
+    font-family: var(--fontPrimaria);
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+h2{
+    font-family: var(--fontPrimaria);
+    font-weight: 400;
+    color: var(--White);
+}
+
+h3{
+    font-family: var(--fontPrimaria);
+    font-weight: 600;
+    color: var(--Green);
+}
+
+.contenedor{
+    margin: 0 auto;
+    background-color: var(--DarkGrey);
+    padding: 5rem 1rem;
+    max-width: 90%;
+    margin-top: 10rem;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor{
+        width: 50rem;
+        max-width: 40%;
+    }
+}
+
+/* Main */
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 150px; /* Puedes ajustar el tamaño según lo necesites */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contenedor__titulo{
+    text-align: center;
+    width: 90%;
+}
+
+.contenedor__parrafo{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    color: var(--White);
+}
+
+/* Boton */
+
+.boton{
+    width: 80%;
+    background-color: var(--Grey);
+    padding: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.boton:hover{
+    background-color: var(--Green);
+}
+
+
+@media (min-width: 768px) {
+    .boton{
+        width: 50%;
+    }
+}
+
+.boton__enlace{
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--fontPrimaria);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+/* Atribution */
+.attribution {
+    margin-top: 3rem;
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
